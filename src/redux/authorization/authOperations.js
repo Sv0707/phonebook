@@ -18,7 +18,8 @@ const register = createAsyncThunk('auth/register', async (credentials, { rejectW
     token.set(data.token);
     return data;
   } catch (error) {
-    return rejectWithValue(error.message);
+    console.dir(error);
+    return rejectWithValue(error.response.data.error.message);
   }
 });
 

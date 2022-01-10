@@ -17,13 +17,14 @@ const ContactList = () => {
   const dispatch = useDispatch();
   const { t } = useTranslation();
 
+  const getDeleteContact = (id) => {
+    dispatch(deleteContact(id));
+    // dispatch(fetchContacts());
+  };
+
   useEffect(() => {
     dispatch(fetchContacts());
   }, [dispatch]);
-
-  const getDeleteContact = (id) => {
-    dispatch(deleteContact(id));
-  };
 
   return (
     <ul className={s.list}>

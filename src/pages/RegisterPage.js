@@ -12,6 +12,7 @@ export default function RegisterPage() {
   const [password, setPassword] = useState('');
   const { t } = useTranslation();
 
+
   const handleChange = ({ target: { name, value } }) => {
     switch (name) {
       case 'name':
