@@ -1,0 +1,23 @@
+{
+    "phonebook": "Phonebook",
+    "name": "Name",
+    "phone":  "Phone",
+    "contacts":  "Contacts",
+    "add-contact":  "Add contact",
+    "find-contact-by-name": "Find contacts by name",
+    "delete": "Delete",
+    "loading": "Loading...",
+    "hello": "Please, sign up or login",
+    "hello-user": "Pleasure to see you again",
+    "login-page": "Login",
+    "email": "E-mail",
+    "password": "Password",
+    "register-page": "Register",
+    "main": "Main",
+    "register": "Sign Up",
+    "login": "Login",
+    "sign-up": "Sign Up",
+    "welcome": "Welcome",
+    "login-btn": "Login",
+    "logout": "Log Out"
+  }

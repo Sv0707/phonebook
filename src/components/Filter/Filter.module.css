@@ -1,0 +1,16 @@
+.label {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.item {
+  margin-bottom: 10px;
+}

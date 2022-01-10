@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  margin-right: 4px;
+}
+
+.name {
+  font-weight: 700;
+  margin-right: 12px;
+}
+.button {
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  border: #6c757d;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border-color: #6c757d;
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
