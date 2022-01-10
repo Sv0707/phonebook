@@ -42,8 +42,6 @@ export default function App() {
             <PrivateRoute path="/contacts" redirectTo="/login">
               <PhonebookPage />
             </PrivateRoute>
-
-            <Redirect to="/" />
     </Switch></>
 }
     </Container>

@@ -1,7 +1,10 @@
 import s from "./ContactsList.module.css";
-import { deleteContact } from "../../redux/contacts/contactsOperations";
+import {
+  deleteContact,
+  fetchContacts,
+} from "../../redux/contacts/contactsOperations";
 import { useSelector, useDispatch } from "react-redux";
-// import { getFilteredContacts } from "../../redux/contacts/contactsSelector";
+import { useEffect } from "react";
 import {
   getLoading,
   getFilteredContacts,
@@ -13,6 +16,10 @@ const ContactList = () => {
   const loading = useSelector(getLoading);
   const dispatch = useDispatch();
   const { t } = useTranslation();
+
+  useEffect(() => {
+    dispatch(fetchContacts());
+  }, [dispatch]);
 
   const getDeleteContact = (id) => {
     dispatch(deleteContact(id));
