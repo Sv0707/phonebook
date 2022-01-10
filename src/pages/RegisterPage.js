@@ -61,7 +61,7 @@ export default function RegisterPage() {
             name="password"
             value={password}
             className={s.input}
-            title='Password must be longer than 7 symbols'
+            title='Password must be at least 8 characters and contain letters (a-z) and digits (0-9)'
             onChange={handleChange}
           />
         </label>
